@@ -23,3 +23,5 @@ plt.xlabel('Longitude')
 plt.ylabel('Latitude')
 plt.title('Clusters')
 plt.show()
+
+plt.savefig('clusters.png')
