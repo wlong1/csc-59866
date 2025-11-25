@@ -1,9 +1,6 @@
 import pandas as pd
 
-"""
-For a table with the following three columns and four rows, write a few lines of python code to build a Pandas dataframe, and output the minimum and maximum height for each of the “kind” groups, i.e., ‘cat’ and ‘dog’, respectively.  
-Note: 5 bonus point if you also solve the problem using cuDF (optional).   
-"""
+
 
 data = {'kind': ['cat', 'dog', 'cat', 'dog'],
         'height': [9.1, 6.0, 9.5, 34.0],
