@@ -17,6 +17,7 @@ dist_km = haversine_distances(coords) * 6371
 model = AgglomerativeClustering(n_clusters=10, metric='precomputed', linkage='average')
 df['cluster'] = model.fit_predict(dist_km)
 
+print(df)
 plt.scatter(df['lng'], df['lat'], c=df['cluster'], cmap='tab10')
 plt.xlabel('Longitude')
 plt.ylabel('Latitude')
