@@ -14,9 +14,9 @@ print("Time to load parquet:", (end - start) * 1000)
 size = os.path.getsize(filename)
 print(f"Size of parquet: {size}")
 
-export = "data.csv"
-if not os.path.exists(export):
-    df.to_csv(export)
+filename = "data.csv"
+if not os.path.exists(filename):
+    df.to_csv(filename)
 
 start = time.time()
 df = pd.read_csv(filename)
