@@ -1,4 +1,4 @@
-import cudf
+import pandas as pd
 
 """
 For a table with the following three columns and four rows, write a few lines of python code to build a Pandas dataframe, and output the minimum and maximum height for each of the “kind” groups, i.e., ‘cat’ and ‘dog’, respectively.  
@@ -10,6 +10,6 @@ data = {'kind': ['cat', 'dog', 'cat', 'dog'],
         'weight': [7.9, 7.5, 9.9, 198.0]
         }
 
-df = cudf.DataFrame(data)
+df = pd.DataFrame(data)
 res = df.groupby('kind').agg({'height':['min','max']})
 print(res)
